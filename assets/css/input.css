@@ -1,1 +1,132 @@
 @import "tailwindcss";
+
+
+@theme {
+    --color-primary: #F58A07;
+    --color-lightPrimary: #f58a071a;
+    --color-secondary: #1D3444;
+    --color-gray: #5B5B5B;
+    --color-midGray: #9C9C9C;
+    --color-skyGray: #394149;
+    --color-lightSkyGray: #394149;
+    --color-A8BCCC: #A8BCCC;
+    --color-blueBlack: #0D1317;
+    --color-db: #063255;
+    --color-db-30: #0632554d;
+    --color-sb: #DCEAF5;
+    --color-sb2: #EDF7FF;
+    --color-black: #000000;
+}
+  
+/* font family */
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/* custom css */
+
+.txtLine{
+    position: relative;
+    padding-bottom: 1px;
+    transition: all .3s ease-in;
+    color: #394149;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: #394149;
+        left: 0;
+        bottom: 0;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform .3s ease-in;
+    }
+    &:hover{
+        color: #F58A07;
+        &::before{
+            background: #F58A07;
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    }
+}
+
+.txtWhite{
+    color: #fff;
+    &::before{
+        background: #fff;
+    }
+    &:hover{
+        color: #DCEAF5;
+        &::before{
+            background: #DCEAF5;
+        }
+    }
+}
+
+.db_box{
+    .db_box__img{
+        border-radius: 0.781vw;
+        img{
+            transition: transform .5s ease-in;
+        }
+    }
+    &:hover{
+        .db_box__img{
+            img{
+                transform: scale(1.3);
+            }
+        }
+    }
+}
+
+.rubberBand{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    display: inline-block;
+    &:hover{
+        animation-name: rubberBand;
+    }
+}
+
+.rubberAnchor{
+    &:hover{
+        .rubberBand{
+            animation-name: rubberBand;
+        }
+    }
+}
+
+
+@keyframes rubberBand {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+    
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+    
+    65% {
+      transform: scale3d(.95, 1.05, 1);
+    }
+    
+    75% {
+      transform: scale3d(1.05, .95, 1);
+    }
+    
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+}
