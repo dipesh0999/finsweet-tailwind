@@ -21,6 +21,7 @@
     --color-secondary: #1D3444;
     --color-gray: #5B5B5B;
     --color-midGray: #9C9C9C;
+    --color-lightSkyGray: #394149;
     --color-blueBlack: #0D1317;
     --color-db: #063255;
     --color-db-30: #0632554d;
@@ -606,6 +607,10 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .tracking-\[1px\] {
+    --tw-tracking: 1px;
+    letter-spacing: 1px;
+  }
   .tracking-normal {
     --tw-tracking: var(--tracking-normal);
     letter-spacing: var(--tracking-normal);
@@ -621,6 +626,9 @@
   }
   .text-gray {
     color: var(--color-gray);
+  }
+  .text-lightSkyGray {
+    color: var(--color-lightSkyGray);
   }
   .text-midGray {
     color: var(--color-midGray);
