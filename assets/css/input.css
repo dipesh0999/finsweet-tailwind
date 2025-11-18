@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+@source "./**/*.{html,js,ts,jsx,tsx,vue}";
 
 @theme {
     --color-primary: #F58A07;
@@ -68,7 +69,6 @@ body{
 
 .db_box{
     .db_box__img{
-        border-radius: 0.781vw;
         img{
             transition: transform .5s ease-in;
         }

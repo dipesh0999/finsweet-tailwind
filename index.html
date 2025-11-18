@@ -3,228 +3,239 @@
   <head>
     <meta charset="UTF-8" />
     <title>Finsweet Tailwind</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <main class="wrapper">
+    <main class="wrapper relative overflow-x-hidden">
 
-      <header class="py-[1.458vw] px-[16.667vw] flex justify-between items-center">
+      <header class="py-[1.458vw] px-[16.667vw] flex justify-between items-center max-sm:py-[3.623vw] max-sm:px-[6.039vw]">
         <a href="" class="rubberBand">
-          <img src="assets/images/logo.png" alt="" class="w-[6.354vw]" width="122" height="28" />
+          <img src="assets/images/logo.png" alt="" class="w-[6.354vw] max-sm:w-[24.155vw]" width="122" height="28" />
         </a>
-        <div class="flex items-center gap-[2.083vw] text-[0.833vw] font-semibold">
-          <ul class="flex items-center gap-[1.667vw]">
-            <li class=""><a href="" class="txtLine">About Us</a></li>
-            <li class=""><a href="" class="txtLine">Careers</a></li>
-            <li class=""><a href="" class="txtLine">Services</a></li>
-            <li class=""><a href="" class="txtLine">Blog</a></li>
-            <li class=""><a href="" class="txtLine">Contact Us</a></li>
-          </ul>
-          <a href="" class="bg-lightPrimary text-[0.833vw] text-primary py-[0.938vw] px-[1.667vw] hover:text-white hover:bg-primary duration-300 ease-in rounded-full">Clone project</a>
+        <div class="flex items-center gap-[2.083vw] font-semibold max-sm:gap-[3.623vw]">
+          <div class="max-sm:absolute max-sm:w-full max-sm:top-0 max-sm:-left-[100%]">
+            <ul class="flex items-center gap-[1.667vw] text-[0.833vw] max-sm:flex-col max-sm:bg-white max-sm:text-[4.831vw]">
+              <li class=""><a href="" class="txtLine">About Us</a></li>
+              <li class=""><a href="" class="txtLine">Careers</a></li>
+              <li class=""><a href="" class="txtLine">Services</a></li>
+              <li class=""><a href="" class="txtLine">Blog</a></li>
+              <li class=""><a href="" class="txtLine">Contact Us</a></li>
+            </ul>
+          </div>
+          <a href="" class="bg-lightPrimary text-[0.833vw] text-primary py-[0.938vw] px-[1.667vw] hover:text-white hover:bg-primary duration-300 ease-in rounded-full max-sm:text-[2.899vw] max-sm:py-[1.208vw] max-sm:px-[2.415vw]">Clone project</a>
+          <div class="md:hidden flex items-center">
+            <button class="outline-none mobile-menu-button">
+              <svg class=" w-[8.454vw] h-[8.454vw] text-black " x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" >
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
         </div>
+
       </header>
 
-      <section class="pt-[6.094vw] pr-[53.203vw] pb-[7.656vw] pl-[16.875vw] bg-sb relative">
-        <div class="">
-          <h1 class="text-[2.969vw] text-secondary leading-[1.1]">Prosper with our bespoke solutions</h1>
-          <p class="text-[0.938vw] text-gray mt-[1.458vw] mb-[1.667vw]">
+      <section class="pt-[6.094vw] pr-[53.203vw] pb-[7.656vw] pl-[16.875vw] bg-sb relative max-sm:p-[0]">
+        <div class="max-sm:py-[12.077vw] max-sm:px-[6.039vw]">
+          <h1 class="text-[2.969vw] text-secondary leading-[1.1] max-sm:text-[8.696vw]">Prosper with our bespoke solutions</h1>
+          <p class="text-[0.938vw] text-gray mt-[1.458vw] mb-[1.667vw] max-sm:mt-[3.623vw] max-sm:mb-[4.831vw] max-sm:text-[3.382vw]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique
           </p>
-          <div class="flex items-end gap-[2.083vw]">
-            <a href="" class="bg-primary text-white py-[0.964vw] px-[1.615vw] hover:text-primary hover:bg-lightPrimary duration-300 ease-in rounded-full">Clone project</a>
-            <a href="" class="leading-[1.1]">See All <br />Services</a>
+          <div class="flex items-center gap-[2.083vw] max-sm:gap-[4.831vw]">
+            <a href="" class="bg-primary text-white text-[0.833vw] font-semibold py-[0.964vw] px-[1.615vw] hover:text-primary hover:bg-lightPrimary duration-300 ease-in rounded-full max-sm:text-[2.899vw] max-sm:py-[2.415vw] max-sm:px-[4.831vw]">See our services</a>
+            <a href="" class="leading-[1.1] text-[0.833vw] font-semibold text-secondary txtLine max-sm:text-[2.899vw]">See All Services</a>
           </div>
-          <div class="text-lightSkyGray tracking-[1px] text-[0.938vw] mt-[2.917vw] mb-[0.938vw]">Worked with 100+ Companies</div>
-          <div class="flex gap-[2.344vw] items-center">
-            <img src="assets/images/banner/logo_1.png" alt="" class="w-[7.448vw]" width="143" height="33" />
-            <img src="assets/images/banner/logo_2.png" alt="" class="w-[7.292vw]" width="140" height="32" />
-            <img src="assets/images/banner/logo_3.png" alt="" class="w-[6.979vw]" width="134" height="31" />
+          <div class="text-lightSkyGray tracking-[1px] text-[0.938vw] mt-[2.917vw] mb-[0.938vw] max-sm:text-[2.899vw] max-sm:my-[3.623vw] ">Worked with 100+ Companies</div>
+          <div class="flex gap-[2.344vw] items-center max-sm:gap-[6.039vw]">
+            <img src="assets/images/banner/logo_1.png" alt="" class="w-[7.448vw] max-sm:w-[21.739vw]" width="143" height="33" />
+            <img src="assets/images/banner/logo_2.png" alt="" class="w-[7.292vw] max-sm:w-[21.739vw]" width="140" height="32" />
+            <img src="assets/images/banner/logo_3.png" alt="" class="w-[6.979vw] max-sm:w-[21.739vw]" width="134" height="31" />
           </div>
         </div>
-        <img src="assets/images/banner/main.png" alt="" class="w-[30.677vw] absolute right-[12.5vw] bottom-0" width="589" height="500" />
+        <img src="assets/images/banner/main.png" alt="" class="w-[30.677vw] absolute right-[12.5vw] bottom-0 max-sm:w-full max-sm:relative max-sm:top-auto max-sm:right-auto" width="589" height="500" />
       </section>
 
-      <section class="py-[5vw] px-[16.667vw]">
-        <h2 class="w-[45vw] leading-[1.2] text-[2.969vw] tracking-normal font-bold text-secondary">We help more than 1500 companies from all sectors</h2>
-        <div class="w-[38.281vw] mt-[1.406vw] mb-[3.333vw]">
-          <p class="text-[0.938vw] text-gray">
+      <section class="py-[5vw] px-[16.667vw] max-sm:py-[12.077vw] max-sm:px-[6.039vw]">
+        <h2 class="w-[45vw] leading-[1.2] text-[2.969vw] tracking-normal font-bold text-secondary max-sm:text-[7.246vw] max-sm:w-fit">We help more than 1500 companies from all sectors</h2>
+        <div class="w-[38.281vw] mt-[1.406vw] mb-[3.333vw] max-sm:w-auto max-sm:mt-[3.623vw] max-sm:mb-[7.246vw]">
+          <p class="text-[0.938vw] text-gray max-sm:text-[3.382vw]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo suscipit tellus et pellentesque.
           </p>
         </div>
-        <div class="flex gap-[2.083vw] items-start">
-          <div class="w-[20.833vw] db_box">
+        <div class="flex gap-[2.083vw] items-start max-sm:gap-[9.662vw] max-sm:flex-wrap">
+          <div class="w-[20.833vw] db_box max-sm:w-full">
             <a href="">
-              <div class="w-[20.833vw] h-[12.604vw] overflow-hidden db_box__img mb-[1.719vw]">
+              <div class="w-[20.833vw] h-[12.604vw] rounded-[1.042vw] overflow-hidden db_box__img mb-[1.719vw] max-sm:w-full max-sm:h-[53.14vw] max-sm:rounded-[4.831vw] max-sm:mb-[4.831vw]">
                 <img src="assets/images/sector/img_1.png" alt="" class="w-full" width="400" height="242" />
               </div>
-              <h3 class="text-[1.25vw] text-blueBlack font-medium mb-[0.885vw] leading-[1.1]">Business strategy</h3>
-              <p class="text-[0.833vw] text-gray mb-[1.25vw] leading-[1.7]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, </p>
+              <h3 class="text-[1.25vw] text-blueBlack font-medium mb-[0.885vw] leading-[1.1] max-sm:text-[4.831vw] max-sm:mb-[3.623vw]">Business strategy</h3>
+              <p class="text-[0.833vw] text-gray mb-[1.25vw] leading-[1.7] max-sm:text-[3.382vw] max-sm:mb-[2.415vw]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, </p>
             </a>
-            <a href="" class="inline-flex items-center rubberAnchor gap-[0.417vw] text-[0.833vw] text-primary font-medium">
+            <a href="" class="inline-flex items-center rubberAnchor gap-[0.417vw] text-[0.833vw] text-primary font-medium max-sm:text-[3.382vw] max-sm:gap-[3.623vw]">
               <span>Learn More</span>
-              <img src="assets/images/icons/right_arrow.png" alt="" class="w-[1.146vw] rubberBand" width="22" height="10" />
+              <img src="assets/images/icons/right_arrow.png" alt="" class="w-[1.146vw] rubberBand max-sm:w-[4.831vw]" width="22" height="10" />
             </a>
           </div>
-          <div class="w-[20.833vw] db_box">
+          <div class="w-[20.833vw] db_box max-sm:w-full">
             <a href="">
-              <div class="w-[20.833vw] h-[12.604vw] overflow-hidden db_box__img mb-[1.719vw]">
+              <div class="w-[20.833vw] h-[12.604vw] rounded-[1.042vw] overflow-hidden db_box__img mb-[1.719vw] max-sm:w-full max-sm:h-[53.14vw] max-sm:rounded-[4.831vw] max-sm:mb-[4.831vw]">
                 <img src="assets/images/sector/img_2.png" alt="" class="w-full" width="400" height="242" />
               </div>
-              <h3 class="text-[1.25vw] text-blueBlack font-medium mb-[0.885vw] leading-[1.1]">Digitalization</h3>
-              <p class="text-[0.833vw] text-gray mb-[1.25vw] leading-[1.7]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, </p>
+              <h3 class="text-[1.25vw] text-blueBlack font-medium mb-[0.885vw] leading-[1.1] max-sm:text-[4.831vw] max-sm:mb-[3.623vw]">Digitalization</h3>
+              <p class="text-[0.833vw] text-gray mb-[1.25vw] leading-[1.7] max-sm:text-[3.382vw] max-sm:mb-[2.415vw]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, </p>
             </a>
-            <a href="" class="inline-flex items-center rubberAnchor gap-[0.417vw] text-[0.833vw] text-primary font-medium">
+            <a href="" class="inline-flex items-center rubberAnchor gap-[0.417vw] text-[0.833vw] text-primary font-medium max-sm:text-[3.382vw] max-sm:gap-[3.623vw]">
               <span>Learn More</span>
-              <img src="assets/images/icons/right_arrow.png" alt="" class="w-[1.146vw] rubberBand" width="22" height="10" />
+              <img src="assets/images/icons/right_arrow.png" alt="" class="w-[1.146vw] rubberBand max-sm:w-[4.831vw]" width="22" height="10" />
             </a>
           </div>
-          <div class="w-[20.833vw] db_box">
+          <div class="w-[20.833vw] db_box max-sm:w-full">
             <a href="">
-              <div class="w-[20.833vw] h-[12.604vw] overflow-hidden db_box__img mb-[1.719vw]">
+              <div class="w-[20.833vw] h-[12.604vw] rounded-[1.042vw] overflow-hidden db_box__img mb-[1.719vw] max-sm:w-full max-sm:h-[53.14vw] max-sm:rounded-[4.831vw] max-sm:mb-[4.831vw]">
                 <img src="assets/images/sector/img_3.png" alt="" class="w-full" width="400" height="242" />
               </div>
-              <h3 class="text-[1.25vw] text-blueBlack font-medium mb-[0.885vw] leading-[1.1]">Risk assessment</h3>
-              <p class="text-[0.833vw] text-gray mb-[1.25vw] leading-[1.7]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, </p>
+              <h3 class="text-[1.25vw] text-blueBlack font-medium mb-[0.885vw] leading-[1.1] max-sm:text-[4.831vw] max-sm:mb-[3.623vw]">Risk assessment</h3>
+              <p class="text-[0.833vw] text-gray mb-[1.25vw] leading-[1.7] max-sm:text-[3.382vw] max-sm:mb-[2.415vw]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, </p>
             </a>
-            <a href="" class="inline-flex items-center rubberAnchor gap-[0.417vw] text-[0.833vw] text-primary font-medium">
+            <a href="" class="inline-flex items-center rubberAnchor gap-[0.417vw] text-[0.833vw] text-primary font-medium max-sm:text-[3.382vw] max-sm:gap-[3.623vw]">
               <span>Learn More</span>
-              <img src="assets/images/icons/right_arrow.png" alt="" class="w-[1.146vw] rubberBand" width="22" height="10" />
+              <img src="assets/images/icons/right_arrow.png" alt="" class="w-[1.146vw] rubberBand max-sm:w-[4.831vw]" width="22" height="10" />
             </a>
           </div>
         </div>
       </section>
 
-      <section class="py-[5vw] px-[16.667vw] bg-sb2">
-        <div class="flex items-start gap-[2.865vw] mb-[3.333vw]">
-          <h2 class="text-blueBlack text-[1.875vw] w-[31.51vw] leading-[1.1]">
+      <section class="py-[5vw] px-[16.667vw] bg-sb2 max-sm:py-[12.077vw] max-sm:px-[6.039vw]">
+        <div class="flex items-start gap-[2.865vw] mb-[3.333vw] max-sm:flex-col max-sm:gap-[4.831vw] max-sm:mb-[7.246vw]">
+          <h2 class="text-blueBlack text-[1.875vw] w-[31.51vw] leading-[1.1] max-sm:text-[6.763vw] max-sm:w-full">
             We are building software solution that solves your business challenges
           </h2>
-          <p class="w-[32.292vw] text-[0.938vw] font-medium text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo suscipit tellus et pellentesque.</p>
+          <p class="w-[32.292vw] text-[0.938vw] font-medium text-secondary max-sm:w-full max-sm:text-[3.382vw]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo suscipit tellus et pellentesque.</p>
         </div>
-        <div class="flex items-center gap-[1.979vw]">
-          <div class="w-[20.885vw] pt-[2.5vw] pr-[1.354vw] pb-[1.927vw] pl-[2.031vw] bg-white rounded-[1.042vw]">
-            <img src="assets/images/icons/icon_1.png" alt="" class="w-[2.135vw]" width="41" height="43">
-            <div class="text-[1.25vw] text-blueBlack mt-[1.667vw] mb-[0.833vw] leading-[1.1] font-semibold">Invoicing</div>
-            <p class="text-[0.833vw] text-gray leading-[1.5]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, </p>
+        <div class="flex items-center gap-[1.979vw] max-sm:flex-col max-sm:gap-[6.039vw]">
+          <div class="w-[20.885vw] pt-[2.5vw] pr-[1.354vw] pb-[1.927vw] pl-[2.031vw] bg-white rounded-[1.042vw] max-sm:w-full max-sm:py-[6.039vw] max-sm:px-[7.246vw] max-sm:rounded-[4.831vw]">
+            <img src="assets/images/icons/icon_1.png" alt="" class="w-[2.135vw] max-sm:w-[9.903vw]" width="41" height="43">
+            <div class="text-[1.25vw] text-blueBlack mt-[1.667vw] mb-[0.833vw] leading-[1.1] font-semibold max-sm:text-[4.831vw] max-sm:mt-[6.039vw] max-sm:mb-[3.623vw]">Invoicing</div>
+            <p class="text-[0.833vw] text-gray leading-[1.5] max-sm:text-[3.382vw]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, </p>
           </div>
-          <div class="w-[20.885vw] pt-[2.5vw] pr-[1.354vw] pb-[1.927vw] pl-[2.031vw] bg-white rounded-[1.042vw]">
-            <img src="assets/images/icons/icon_2.png" alt="" class="w-[2.135vw]" width="41" height="43">
-            <div class="text-[1.25vw] text-blueBlack mt-[1.667vw] mb-[0.833vw] leading-[1.1] font-semibold">Support</div>
-            <p class="text-[0.833vw] text-gray leading-[1.5]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, </p>
+          <div class="w-[20.885vw] pt-[2.5vw] pr-[1.354vw] pb-[1.927vw] pl-[2.031vw] bg-white rounded-[1.042vw] max-sm:w-full max-sm:py-[6.039vw] max-sm:px-[7.246vw] max-sm:rounded-[4.831vw]">
+            <img src="assets/images/icons/icon_2.png" alt="" class="w-[2.135vw] max-sm:w-[9.903vw]" width="41" height="43">
+            <div class="text-[1.25vw] text-blueBlack mt-[1.667vw] mb-[0.833vw] leading-[1.1] font-semibold max-sm:text-[4.831vw] max-sm:mt-[6.039vw] max-sm:mb-[3.623vw]">Support</div>
+            <p class="text-[0.833vw] text-gray leading-[1.5] max-sm:text-[3.382vw]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, </p>
           </div>
-          <div class="w-[20.885vw] pt-[2.5vw] pr-[1.354vw] pb-[1.927vw] pl-[2.031vw] bg-white rounded-[1.042vw]">
-            <img src="assets/images/icons/icon_3.png" alt="" class="w-[2.135vw]" width="41" height="43">
-            <div class="text-[1.25vw] text-blueBlack mt-[1.667vw] mb-[0.833vw] leading-[1.1] font-semibold">Surveying</div>
-            <p class="text-[0.833vw] text-gray leading-[1.5]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, </p>
+          <div class="w-[20.885vw] pt-[2.5vw] pr-[1.354vw] pb-[1.927vw] pl-[2.031vw] bg-white rounded-[1.042vw] max-sm:w-full max-sm:py-[6.039vw] max-sm:px-[7.246vw] max-sm:rounded-[4.831vw]">
+            <img src="assets/images/icons/icon_3.png" alt="" class="w-[2.135vw] max-sm:w-[9.903vw]" width="41" height="43">
+            <div class="text-[1.25vw] text-blueBlack mt-[1.667vw] mb-[0.833vw] leading-[1.1] font-semibold max-sm:text-[4.831vw] max-sm:mt-[6.039vw] max-sm:mb-[3.623vw]">Surveying</div>
+            <p class="text-[0.833vw] text-gray leading-[1.5] max-sm:text-[3.382vw]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, </p>
           </div>
         </div>
       </section>
 
-      <section class="pt-[5.156vw] pb-[6.667vw] px-[16.667vw]">
-        <div class="mb-[5vw] flex gap-[2.448vw] items-center">
+      <section class="pt-[5.156vw] pb-[6.667vw] px-[16.667vw] max-sm:p-0">
+        <div class="mb-[5vw] flex gap-[2.448vw] items-center max-sm:mb-[0] max-sm:flex-col max-sm:items-start max-sm:gap-[9.662vw] max-sm:py-[12.077vw] max-sm:px-[6.039vw]">
           <div class="">
-            <h2 class="text-[2.5vw] font-semibold mb-[1.667vw] leading-[1.2] text-blueBlack">The energy of a start-up combined with 30 years of experience.</h2>
-            <p class="w-[26.563vw] text-[0.938vw] font-medium mb-[2.5vw]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo suscipit tellus et pellentesque.</p>
-            <div class="flex gap-[1.354vw]">
-              <div class="w-[13.75vw]">
-                <div class="text-[1.875vw] font-bold leading-[1] text-primary">15+</div>
-                <div class="text-[1.25vw] leading-[1] my-[0.833vw] text-blueBlack font-semibold">Awards received</div>
-                <p class="text-[0.833vw] font-medium">Lorem ipsum dolor sit amet, consectetur adipiscin. Curabitur sit amet eros elit et.</p>
+            <h2 class="text-[2.5vw] font-semibold mb-[1.667vw] leading-[1.2] text-blueBlack max-sm:text-[7.246vw] max-sm:mb-[3.623vw]">The energy of a start-up combined with 30 years of experience.</h2>
+            <p class="w-[26.563vw] text-[0.938vw] font-medium mb-[2.5vw] max-sm:w-auto max-sm:text-[3.382vw] max-sm:mb-[4.831vw]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo suscipit tellus et pellentesque.</p>
+            <div class="flex gap-[1.354vw] max-sm:gap-[4.831vw]">
+              <div class="w-[13.75vw] max-sm:w-1/2">
+                <div class="text-[1.875vw] font-bold leading-[1] text-primary max-sm:text-[7.729vw]">15+</div>
+                <div class="text-[1.25vw] leading-[1] my-[0.833vw] text-blueBlack font-semibold max-sm:text-[4.831vw] max-sm:my-[2.415vw]">Awards received</div>
+                <p class="text-[0.833vw] font-medium max-sm:text-[2.899vw]">Lorem ipsum dolor sit amet, consectetur adipiscin. Curabitur sit amet eros elit et.</p>
               </div>
-              <div class="w-[13.75vw]">
-                <div class="text-[1.875vw] font-bold leading-[1] text-primary">500+</div>
-                <div class="text-[1.25vw] leading-[1] my-[0.833vw] text-blueBlack font-semibold">Clients served</div>
-                <p class="text-[0.833vw] font-medium">Lorem ipsum dolor sit amet, consectetur adipiscin. Curabitur sit amet eros elit et.</p>
+              <div class="w-[13.75vw] max-sm:w-1/2">
+                <div class="text-[1.875vw] font-bold leading-[1] text-primary max-sm:text-[7.729vw]">500+</div>
+                <div class="text-[1.25vw] leading-[1] my-[0.833vw] text-blueBlack font-semibold max-sm:text-[4.831vw] max-sm:my-[2.415vw]">Clients served</div>
+                <p class="text-[0.833vw] font-medium max-sm:text-[2.899vw]">Lorem ipsum dolor sit amet, consectetur adipiscin. Curabitur sit amet eros elit et.</p>
               </div>
             </div>
           </div>
-          <img src="assets/images/about.png" alt="" class="w-[33.177vw]" width="637" height="667" />
+          <img src="assets/images/about.png" alt="" class="w-[33.177vw] max-sm:w-full" width="637" height="667" />
         </div>
-        <div class="bg-sb2 py-[2.5vw] pr-[2.208vw] pl-[2.5vw] rounded-[1.042vw]">
-          <div class="flex items-center gap-[1.25vw]">
-            <a href="" class="active text-[0.833vw] text-db-30 py-[0.417vw] px-[1.25vw] rounded-full font-semibold border-[1px] border-db-30 bg-white text-primary border-white hover:text-primary hover:border-primary duration-300 ease-in">Business strategy</a>
-            <a href="" class="text-[0.833vw] text-db-30 py-[0.417vw] px-[1.25vw] rounded-full font-semibold border-[1px] border-db-30 hover:text-primary hover:border-primary duration-300 ease-in">Digitalization</a>
-            <a href="" class="text-[0.833vw] text-db-30 py-[0.417vw] px-[1.25vw] rounded-full font-semibold border-[1px] border-db-30 hover:text-primary hover:border-primary duration-300 ease-in">Risk assessment</a>
+        <div class="bg-sb2 py-[2.5vw] pr-[2.208vw] pl-[2.5vw] rounded-[1.042vw] max-sm:py-[12.077vw] max-sm:px-[6.039vw] max-sm:rounded-[0]">
+          <div class="flex items-center gap-[1.25vw] max-sm:gap-[2.415vw]">
+            <a href="" class="active text-[0.833vw] text-db-30 py-[0.417vw] px-[1.25vw] rounded-full font-semibold border-[1px] border-db-30 bg-white text-primary border-white hover:text-primary hover:border-primary duration-300 ease-in max-sm:py-[1.208vw] max-sm:px-[2.415vw] max-sm:text-[2.415vw]">Business strategy</a>
+            <a href="" class="text-[0.833vw] text-db-30 py-[0.417vw] px-[1.25vw] rounded-full font-semibold border-[1px] border-db-30 hover:text-primary hover:border-primary duration-300 ease-in max-sm:py-[1.208vw] max-sm:px-[2.415vw] max-sm:text-[2.415vw]">Digitalization</a>
+            <a href="" class="text-[0.833vw] text-db-30 py-[0.417vw] px-[1.25vw] rounded-full font-semibold border-[1px] border-db-30 hover:text-primary hover:border-primary duration-300 ease-in max-sm:py-[1.208vw] max-sm:px-[2.415vw] max-sm:text-[2.415vw]">Risk assessment</a>
           </div>
-          <div class="flex mt-[3.542vw] justify-between">
-            <div class="w-[29.792vw]">
-              <h2 class="text-[2.5vw] text-blueBlack mb-[1.302vw] font-semibold leading-[1.1]">Helping clients with research and strategy for their business</h2>
-              <p class="text-[0.938vw] font-medium text-gray mb-[2.083vw] w-[26.563vw]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo suscipit tellus et pellentesque. </p>
-              <p class="text-[0.938vw] font-medium text-gray mb-[2.083vw] w-[26.563vw]">Mattis purus. Vivamus commodo suscipit tellus et pellent. Curabitur sit amet eros blan esque. </p>
-              <a href="" class="inline-flex items-center rubberAnchor gap-[0.417vw] text-[0.833vw] text-primary font-medium">
+          <div class="flex mt-[3.542vw] justify-between max-sm:mt-[7.246vw] max-sm:flex-col max-sm:gap-[7.246vw]">
+            <div class="w-[29.792vw] max-sm:w-full">
+              <h2 class="text-[2.5vw] text-blueBlack mb-[1.302vw] font-semibold leading-[1.1] max-sm:text-[7.246vw] max-sm:mb-[3.623vw]">Helping clients with research and strategy for their business</h2>
+              <p class="text-[0.938vw] font-medium text-gray mb-[2.083vw] w-[26.563vw] max-sm:w-full max-sm:text-[3.382vw] max-sm:mb-[2.415vw]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo suscipit tellus et pellentesque. </p>
+              <p class="text-[0.938vw] font-medium text-gray mb-[2.083vw] w-[26.563vw] max-sm:w-full max-sm:text-[3.382vw] max-sm:mb-[2.415vw]">Mattis purus. Vivamus commodo suscipit tellus et pellent. Curabitur sit amet eros blan esque. </p>
+              <a href="" class="inline-flex items-center rubberAnchor gap-[0.417vw] text-[0.833vw] text-primary font-medium max-sm:text-[3.382vw] max-sm:gap-[3.623vw]">
                 <span>Learn More</span>
-                <img src="assets/images/icons/right_arrow.png" alt="" class="w-[1.146vw] rubberBand" width="22" height="10" />
+                <img src="assets/images/icons/right_arrow.png" alt="" class="w-[1.146vw] rubberBand max-sm:w-[5.314vw]" width="22" height="10" />
               </a>
             </div>
-            <img src="assets/images/service.png" alt="" class="w-[24.583vw]" width="472" height="466" />
+            <img src="assets/images/service.png" alt="" class="w-[24.583vw] max-sm:w-full" width="472" height="466" />
           </div>
         </div>
       </section>
 
-      <section class="flex items-start">
-        <img src="assets/images/service.png" alt="" class="w-[50vw]" width="960" height="518" />
-        <div class="py-[6.667vw] pr-[15.625vw] pl-[6.667vw] bg-primary w-[100%]">
-          <div class="text-[2.5vw] text-white mb-[2.24vw] font-semibold leading-[1.3]">Energy of a start-up combined with 30 years of experience.</div>
-          <a href="" class="bg-white font-semibold text-primary text-[0.833vw] border-[1px] border-white pt-[0.99vw] pb-[0.938vw] px-[1.615vw] hover:text-white hover:bg-lightPrimary duration-300 ease-in rounded-full">See Job Vacancies</a>
+      <section class="flex items-start max-sm:flex-col-reverse">
+        <img src="assets/images/exp.png" alt="" class="w-[50vw] max-sm:w-full" width="960" height="518" />
+        <div class="py-[6.667vw] pr-[15.625vw] pl-[6.667vw] bg-primary w-full max-sm:py-[12.077vw] max-sm:px-[6.039vw]">
+          <div class="text-[2.5vw] text-white mb-[2.24vw] font-semibold leading-[1.3] max-sm:text-[7.246vw] max-sm:mb-[7.246vw]">Energy of a start-up combined with 30 years of experience.</div>
+          <a href="" class="bg-white font-semibold text-primary text-[0.833vw] border-[1px] border-white pt-[0.99vw] pb-[0.938vw] px-[1.615vw] hover:text-white hover:bg-lightPrimary duration-300 ease-in rounded-full max-sm:text-[3.382vw] max-sm:py-[2.415vw] max-sm:px-[4.831vw]">See Job Vacancies</a>
         </div>
       </section>
 
-      <section class="py-[6.667vw] px-[16.667vw] flex items-center gap-[5.729vw]">
-        <div class="w-[28.646vw]">
-          <div class="text-[2.5vw] text-blueBlack font-semibold leading-[1]">Finsweet was a dream to work with</div>
-          <p class="text-[0.938vw] text-gray font-medium mt-[1.25vw] mb-[2.083vw]">Maecenas efficitur scelerisque lorem, et varius lacus tincidunt vel. Pellentesque a arcu vitae diam dapibus mattis vel vel orci. Vivamus eleifend nec felis vel auctor.</p>
-          <div class="flex items-center gap-[1.25vw]">
-            <img src="assets/images/ceo_profile.png" alt="" class="w-[4.167vw]" width="80" height="80" />
+      <section class="py-[6.667vw] px-[16.667vw] flex items-center gap-[5.729vw] max-sm:py-[12.077vw] max-sm:px-[6.039vw] max-sm:flex-col max-sm:gap-[9.662vw]">
+        <div class="w-[28.646vw] max-sm:w-full">
+          <div class="text-[2.5vw] text-blueBlack font-semibold leading-[1] max-sm:text-[7.246vw]">Finsweet was a dream to work with</div>
+          <p class="text-[0.938vw] text-gray font-medium mt-[1.25vw] mb-[2.083vw] max-sm:text-[3.382vw] max-sm:mt-[3.623vw] max-sm:mb-[4.831vw]">Maecenas efficitur scelerisque lorem, et varius lacus tincidunt vel. Pellentesque a arcu vitae diam dapibus mattis vel vel orci. Vivamus eleifend nec felis vel auctor.</p>
+          <div class="flex items-center gap-[1.25vw] max-sm:gap-[6.039vw]">
+            <img src="assets/images/ceo_profile.png" alt="" class="w-[4.167vw] max-sm:w-[14.493vw]" width="80" height="80" />
             <div class="">
-              <div class="text-db text-[1.25vw] mb-[0.521vw] font-medium leading-[1]">Chikelu Neo</div>
-              <div class="text-primary text-[0.938vw] font-medium leading-[1]">CEO at MazeAI</div>
+              <div class="text-db text-[1.25vw] mb-[0.521vw] font-medium leading-[1] max-sm:text-[3.865vw]">Chikelu Neo</div>
+              <div class="text-primary text-[0.938vw] font-medium leading-[1] max-sm:text-[3.382vw]">CEO at MazeAI</div>
             </div>
           </div>
         </div>
-        <img src="assets/images/ceo.png" alt="" class="w-[32.292vw]" width="620" height="501" />
+        <img src="assets/images/ceo.png" alt="" class="w-[32.292vw] max-sm:w-full" width="620" height="501" />
       </section>
 
-      <section class="py-[5vw] px-[16.667vw] bg-sb">
-        <h2 class="text-[2.5vw] text-blueBlack mb-[3.333vw] font-semibold">Latest Blog & News</h2>
-        <div class="flex items-start gap-[2.083vw]">
-          <a href="" class="w-[20.833vw] hover:-translate-y-[1vw] duration-300 ease-in block">
+      <section class="py-[5vw] px-[16.667vw] bg-sb max-sm:py-[12.077vw] max-sm:px-[6.039vw]">
+        <h2 class="text-[2.5vw] text-blueBlack mb-[3.333vw] font-semibold max-sm:text-[7.246vw] max-sm:mb-[6.039vw]">Latest Blog & News</h2>
+        <div class="flex items-start gap-[2.083vw] max-sm:flex-col max-sm:gap-[7.246vw]">
+          <a href="" class="w-[20.833vw] hover:-translate-y-[1vw] duration-300 ease-in block max-sm:w-full">
             <div>
               <img src="assets/images/blog/img_1.png" alt="" class="w-full" width="400" height="230" />
-              <div class="bg-white p-[1.667vw] w-full rounded-b-[1.042vw]">
-                <div class="text-[1.25vw] text-blueBlack leading-[1.3] mb-[0.833vw]">Why you have to digitalize in 2021</div>
-                <p class="text-[0.833vw] text-gray mb-[1.25vw] leading-[1.4]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et.</p>
-                <span class="inline-flex items-center rubberAnchor gap-[0.417vw] text-[0.833vw] text-primary font-medium">
+              <div class="bg-white p-[1.667vw] w-full rounded-b-[1.042vw] max-sm:rounded-b-[4.831vw] max-sm:py-[7.246vw] max-sm:px-[4.831vw]">
+                <div class="text-[1.25vw] text-blueBlack leading-[1.3] mb-[0.833vw] max-sm:text-[5.314vw] max-sm:mb-[3.623vw]">Why you have to digitalize in 2021</div>
+                <p class="text-[0.833vw] text-gray mb-[1.25vw] leading-[1.4] max-sm:text-[2.899vw] max-sm:mb-[3.623vw]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et.</p>
+                <span class="inline-flex items-center rubberAnchor gap-[0.417vw] text-[0.833vw] text-primary font-medium max-sm:text-[2.899vw] max-sm:gap-[3.623vw]">
                   <span>Learn More</span>
-                  <img src="assets/images/icons/right_arrow.png" alt="" class="w-[1.146vw] rubberBand" width="22" height="10" />
+                  <img src="assets/images/icons/right_arrow.png" alt="" class="w-[1.146vw] rubberBand max-sm:w-[5.314vw]" width="22" height="10" />
                 </span>
               </div>
             </div>
           </a>
-          <a href="" class="w-[20.833vw] hover:-translate-y-[1vw] duration-300 ease-in block">
+          <a href="" class="w-[20.833vw] hover:-translate-y-[1vw] duration-300 ease-in block max-sm:w-full">
             <div>
               <img src="assets/images/blog/img_2.png" alt="" class="w-full" width="400" height="230" />
-              <div class="bg-white p-[1.667vw] w-full rounded-b-[1.042vw]">
-                <div class="text-[1.25vw] text-blueBlack leading-[1.3] mb-[0.833vw]">Our internal process and longerm vision</div>
-                <p class="text-[0.833vw] text-gray mb-[1.25vw] leading-[1.4]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et.</p>
-                <span class="inline-flex items-center rubberAnchor gap-[0.417vw] text-[0.833vw] text-primary font-medium">
+              <div class="bg-white p-[1.667vw] w-full rounded-b-[1.042vw] max-sm:rounded-b-[4.831vw] max-sm:py-[7.246vw] max-sm:px-[4.831vw]">
+                <div class="text-[1.25vw] text-blueBlack leading-[1.3] mb-[0.833vw] max-sm:text-[5.314vw] max-sm:mb-[3.623vw]">Our internal process and longerm vision</div>
+                <p class="text-[0.833vw] text-gray mb-[1.25vw] leading-[1.4] max-sm:text-[2.899vw] max-sm:mb-[3.623vw]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et.</p>
+                <span class="inline-flex items-center rubberAnchor gap-[0.417vw] text-[0.833vw] text-primary font-medium max-sm:text-[2.899vw] max-sm:gap-[3.623vw]">
                   <span>Learn More</span>
-                  <img src="assets/images/icons/right_arrow.png" alt="" class="w-[1.146vw] rubberBand" width="22" height="10" />
+                  <img src="assets/images/icons/right_arrow.png" alt="" class="w-[1.146vw] rubberBand max-sm:w-[5.314vw]" width="22" height="10" />
                 </span>
               </div>
             </div>
           </a>
-          <a href="" class="w-[20.833vw] hover:-translate-y-[1vw] duration-300 ease-in block">
+          <a href="" class="w-[20.833vw] hover:-translate-y-[1vw] duration-300 ease-in block max-sm:w-full">
             <div>
               <img src="assets/images/blog/img_3.png" alt="" class="w-full" width="400" height="230" />
-              <div class="bg-white p-[1.667vw] w-full rounded-b-[1.042vw]">
-                <div class="text-[1.25vw] text-blueBlack leading-[1.3] mb-[0.833vw]">Helping the next generation of leaders</div>
-                <p class="text-[0.833vw] text-gray mb-[1.25vw] leading-[1.4]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et.</p>
-                <span class="inline-flex items-center rubberAnchor gap-[0.417vw] text-[0.833vw] text-primary font-medium">
+              <div class="bg-white p-[1.667vw] w-full rounded-b-[1.042vw] max-sm:rounded-b-[4.831vw] max-sm:py-[7.246vw] max-sm:px-[4.831vw]">
+                <div class="text-[1.25vw] text-blueBlack leading-[1.3] mb-[0.833vw] max-sm:text-[5.314vw] max-sm:mb-[3.623vw]">Helping the next generation of leaders</div>
+                <p class="text-[0.833vw] text-gray mb-[1.25vw] leading-[1.4] max-sm:text-[2.899vw] max-sm:mb-[3.623vw]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et.</p>
+                <span class="inline-flex items-center rubberAnchor gap-[0.417vw] text-[0.833vw] text-primary font-medium max-sm:text-[2.899vw] max-sm:gap-[3.623vw]">
                   <span>Learn More</span>
-                  <img src="assets/images/icons/right_arrow.png" alt="" class="w-[1.146vw] rubberBand" width="22" height="10" />
+                  <img src="assets/images/icons/right_arrow.png" alt="" class="w-[1.146vw] rubberBand max-sm:w-[5.314vw]" width="22" height="10" />
                 </span>
               </div>
             </div>
@@ -232,47 +243,47 @@
         </div>
       </section>
 
-      <footer class="px-[16.667vw] pb-[5.063vw] pt-[4.115vw] bg-db text-white">
-        <div class="flex justify-between">
-          <div class="w-[18.281vw]">
+      <footer class="px-[16.667vw] pb-[5.063vw] pt-[4.115vw] bg-db text-white max-sm:py-[12.077vw] max-sm:px-[6.039vw]">
+        <div class="flex justify-between items-start max-sm:flex-wrap max-sm:gap-[12.077vw]">
+          <div class="w-[18.281vw] max-sm:w-full">
             <a href="" class="rubberBand">
-              <img src="assets/images/footer_logo.png" alt="" class="w-[6.25vw]" width="120" height="27" />
+              <img src="assets/images/footer_logo.png" alt="" class="w-[6.25vw] max-sm:w-[28.986vw]" width="120" height="27" />
             </a>
-            <div class="text-[1.875vw] my-[1.667vw] font-semibold leading-[1.3]">Bespoke software solutions</div>
-            <div class="flex items-center gap-[1.042vw]">
-              <a href="" class="w-[1.25vw] hover:-translate-y-[.25vw] duration-300 ease-in"><img src="assets/images/icons/fb.png" alt="" class="w-full" width="24" height="24" /></a>
-              <a href="" class="w-[1.25vw] hover:-translate-y-[.25vw] duration-300 ease-in"><img src="assets/images/icons/yt.png" alt="" class="w-full" width="24" height="24" /></a>
-              <a href="" class="w-[1.25vw] hover:-translate-y-[.25vw] duration-300 ease-in"><img src="assets/images/icons/insta.png" alt="" class="w-full" width="24" height="24" /></a>
-              <a href="" class="w-[1.25vw] hover:-translate-y-[.25vw] duration-300 ease-in"><img src="assets/images/icons/twitter.png" alt="" class="w-full" width="24" height="24" /></a>
+            <div class="text-[1.875vw] my-[1.667vw] font-semibold leading-[1.3] max-sm:text-[7.729vw] max-sm:mt-[4.831vw] max-sm:mb-[7.246vw]">Bespoke software solutions</div>
+            <div class="flex items-center gap-[1.042vw] max-sm:gap-[7.246vw]">
+              <a href="" class="w-[1.25vw] max-sm:w-[5.797vw] hover:-translate-y-[.25vw] duration-300 ease-in"><img src="assets/images/icons/fb.png" alt="" class="w-full" width="24" height="24" /></a>
+              <a href="" class="w-[1.25vw] max-sm:w-[5.797vw] hover:-translate-y-[.25vw] duration-300 ease-in"><img src="assets/images/icons/yt.png" alt="" class="w-full" width="24" height="24" /></a>
+              <a href="" class="w-[1.25vw] max-sm:w-[5.797vw] hover:-translate-y-[.25vw] duration-300 ease-in"><img src="assets/images/icons/insta.png" alt="" class="w-full" width="24" height="24" /></a>
+              <a href="" class="w-[1.25vw] max-sm:w-[5.797vw] hover:-translate-y-[.25vw] duration-300 ease-in"><img src="assets/images/icons/twitter.png" alt="" class="w-full" width="24" height="24" /></a>
             </div>
           </div>
-          <div class="flex items-start gap-[5.521vw]">
+          <div class="flex items-start gap-[5.521vw] max-sm:justify-between max-sm:w-full">
             <ul>
-              <li class="text-[0.938vw] font-semibold mb-[1.25vw]"><a href="" class="txtLine txtWhite">Company</a></li>
-              <li class="text-[0.833vw] font-medium mb-[0.833vw]"><a href="" class="txtLine txtWhite">About Us</a></li>
-              <li class="text-[0.833vw] font-medium mb-[0.833vw]"><a href="" class="txtLine txtWhite">Careers</a></li>
-              <li class="text-[0.833vw] font-medium mb-[0.833vw]"><a href="" class="txtLine txtWhite">Services</a></li>
-              <li class="text-[0.833vw] font-medium mb-[0.833vw]"><a href="" class="txtLine txtWhite">Blog</a></li>
+              <li class="text-[0.938vw] max-sm:text-[5.797vw] font-semibold mb-[1.25vw] max-sm:mb-[4.831vw]"><a href="" class="txtLine txtWhite">Company</a></li>
+              <li class="text-[0.833vw] max-sm:text-[4.348vw] font-medium mb-[0.833vw] max-sm:mb-[3.623vw]"><a href="" class="txtLine txtWhite">About Us</a></li>
+              <li class="text-[0.833vw] max-sm:text-[4.348vw] font-medium mb-[0.833vw] max-sm:mb-[3.623vw]"><a href="" class="txtLine txtWhite">Careers</a></li>
+              <li class="text-[0.833vw] max-sm:text-[4.348vw] font-medium mb-[0.833vw] max-sm:mb-[3.623vw]"><a href="" class="txtLine txtWhite">Services</a></li>
+              <li class="text-[0.833vw] max-sm:text-[4.348vw] font-medium mb-[0.833vw] max-sm:mb-[3.623vw]"><a href="" class="txtLine txtWhite">Blog</a></li>
             </ul>
             <ul>
-              <li class="text-[0.938vw] font-semibold mb-[1.25vw] text-white">Connect</li>
-              <li class="text-[0.833vw] font-medium mb-[0.833vw]"><a href="mailto:hi@finsweet.com" class="txtLine txtWhite">hi@finsweet.com</a></li>
-              <li class="text-[0.833vw] font-medium mb-[0.833vw]"><a href="tel:+1234567890" class="txtLine txtWhite">+(123) 456-7890</a></li>
+              <li class="text-[0.938vw] max-sm:text-[5.797vw] font-semibold mb-[1.25vw] max-sm:mb-[4.831vw] text-white">Connect</li>
+              <li class="text-[0.833vw] max-sm:text-[4.348vw] font-medium mb-[0.833vw] max-sm:mb-[3.623vw]"><a href="mailto:hi@finsweet.com" class="txtLine txtWhite">hi@finsweet.com</a></li>
+              <li class="text-[0.833vw] max-sm:text-[4.348vw] font-medium mb-[0.833vw] max-sm:mb-[3.623vw]"><a href="tel:+1234567890" class="txtLine txtWhite">+(123) 456-7890</a></li>
             </ul>
           </div>
-          <div class="w-[17.813vw]">
-            <div class="text-[0.938vw] font-semibold mb-[1.25vw] text-white">Join Newsletter</div>
+          <div class="w-[17.813vw] max-sm:w-full">
+            <div class="text-[0.938vw] font-semibold mb-[1.25vw] text-white max-sm:text-[5.314vw] max-sm:mb-[4.831vw]">Join Newsletter</div>
             <form action="">
-              <input type="email" class="bg-white font-medium pt-[0.938vw] pb-[0.885vw] px-[1.667vw] w-full rounded-full outline-0 placeholder:text-midGray text-midGray text-[0.833vw]" placeholder="Type email here" />
-              <button type="submit" class="bg-primary leading-[1] font-semibold border-[1px] border-primary pb-[0.938vw] pt-[0.885vw] px-[1.667vw] rounded-full hover:bg-white hover:text-primary duration-300 ease-in cursor-pointer mt-[0.833vw]">Subscribe</button>
+              <input type="email" class="bg-white font-medium pt-[0.938vw] pb-[0.885vw] px-[1.667vw] w-full rounded-full outline-0 placeholder:text-midGray text-midGray text-[0.833vw] max-sm:py-[2.415vw] max-sm:px-[4.831vw] max-sm:text-[4.348vw]" placeholder="Type email here" />
+              <button type="submit" class="bg-primary leading-[1] text-[0.729vw] font-semibold border-[1px] border-primary pb-[0.938vw] pt-[0.885vw] px-[1.667vw] rounded-full hover:bg-white hover:text-primary duration-300 ease-in cursor-pointer mt-[0.833vw] max-sm:py-[2.415vw] max-sm:px-[4.831vw] max-sm:text-[3.382vw] max-sm:mt-[4.831vw]">Subscribe</button>
             </form>
           </div>
         </div>
-        <div class="flex justify-between mt-[3.333vw]">
-          <div class="text-[0.833vw] font-medium text-white">© All rights reserved – Finsweet</div>
-          <div class="flex items-center gap-[0.781vw]">
-            <a href="" class="text-[0.833vw] font-medium txtLine txtWhite">Privacy Policy</a>
-            <a href="" class="text-[0.833vw] font-medium txtLine txtWhite">Terms & Conditions</a>
+        <div class="flex justify-between mt-[3.333vw] max-sm:mt-[12.077vw] max-sm:flex-col-reverse items-center max-sm:gap-[7.246vw]">
+          <div class="text-[0.833vw] font-medium text-white max-sm:text-[3.865vw]">© All rights reserved – Finsweet</div>
+          <div class="flex items-center gap-[0.781vw] text-[0.833vw] max-sm:text-[3.865vw] max-sm:gap-[7.246vw] font-medium">
+            <a href="" class="txtLine txtWhite">Privacy Policy</a>
+            <a href="" class="txtLine txtWhite">Terms & Conditions</a>
           </div>
         </div>
       </footer>
